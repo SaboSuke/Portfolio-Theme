@@ -1,0 +1,119 @@
+//colors 
+$primaryColor: #D308A8;
+$secondaryColor: #FFEBA9 ;
+$backgroundColorPrimary: #0F052F;
+$backgroundColorSecondary: #291C53; 
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button, img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn-primary{
+    color: white;
+    background: $primaryColor;
+    border: 1px solid transparent;
+    mix-blend-mode: normal;
+    box-shadow: 0px 0px 28px 1px rgba(255, 0, 87, 0.16);
+    padding: 20px 50px;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    &:hover{
+        color: $primaryColor;
+        background: white;
+        border: 1px solid $primaryColor;
+    }
+}
+
+.btn-secondary{
+    color: $primaryColor;
+    background: white;
+    border: 1px solid $primaryColor;
+    mix-blend-mode: normal;
+    padding: 20px 50px;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    &:hover{
+        color: white;
+        background: $primaryColor;
+        border: 1px solid transparent;
+    }
+}
+
+.btn-visit{
+    font-weight: bold;
+    background: $backgroundColorSecondary;
+    color: white;
+    mix-blend-mode: normal;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    transition: all .2s ease-in-out;
+    &:hover{
+        color: $backgroundColorSecondary;        
+        background: white;
+        mix-blend-mode: normal;
+        box-shadow: 0px 0px 28px 1px rgba(255, 0, 87, 0.16);
+        border: 1px solid $backgroundColorSecondary;
+        border-radius: 0px;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.btn-send{
+    cursor: pointer;
+    font-weight: bold;
+    color: $backgroundColorPrimary;
+    background: $primaryColor;
+    border: 1px solid transparent;
+    mix-blend-mode: normal;
+    box-shadow: 0px 0px 28px 1px rgba(255, 0, 87, 0.16);
+    padding: 10px 20px;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    &:hover{
+        color: $primaryColor;
+        background: $backgroundColorSecondary;
+        border: 1px solid $primaryColor;
+    }
+}
+

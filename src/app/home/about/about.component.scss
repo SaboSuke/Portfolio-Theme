@@ -1,0 +1,44 @@
+//colors 
+$primaryColor: #D308A8;
+$secondaryColor: #FFEBA9 ;
+$backgroundColorPrimary: #0F052F;
+$backgroundColorSecondary: #291C53;
+$nameColor: #AED5F8;
+$textLowPriority: #A1A1A1;
+
+.about{
+    padding-top: 100px;
+    margin: 0 100px;    
+
+    .about_wrapper{
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+
+        .avatar{ 
+            background: url(../../../assets/img/about_background.png) no-repeat;
+            background-size:contain;
+            img{
+                transform: scale(.8) translate(-5px,-40px);
+            }
+        }
+
+        .content{
+            line-height: 30px;
+            padding-left: 180px;
+            transform: translate(0, -40px);
+
+
+            h2{
+                color: $primaryColor;
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+
+            p{
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+    }
+}
